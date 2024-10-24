@@ -7,9 +7,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity2 : AppCompatActivity() {
 
+
+    lateinit var livroViewModel : LivroViewModel
     lateinit var btnStart: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,5 +32,11 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this, SegundaTela::class.java)
             startActivity(intent)
         }
+
+
+       livroViewModel = ViewModelProvider(this).get(LivroViewModel::class.java)
+
+        livroViewModel.addLivro(Livro("Seila", "Marvel", 2020))
+        livroViewModel.addLivro(Livro("Seila2", "Marvel", 2021))
     }
 }

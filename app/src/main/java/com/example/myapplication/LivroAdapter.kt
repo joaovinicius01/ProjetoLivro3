@@ -10,14 +10,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-// Data class para representar um livro
+
 data class Book(
     val nome_livro: String,
     val msg: String,
     val image: Int
 )
 
-// Adapter para a lista de livros
+
 class livroAdapter(private val lista: List<Livro>) : RecyclerView.Adapter<livroAdapter.LivroViewHolder>() {
 
     inner class LivroViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

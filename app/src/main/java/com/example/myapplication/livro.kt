@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +10,20 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
-
+@Parcelize
+@Entity(tableName = "livro_table")
 data class Livro(
+    @PrimaryKey(autoGenerate = true) //autoincrement
     val nome_livro: String,
     val msg: String,
     val image: Int
-)
+
+
+) : Parcelable
 
 
 class LivroAdapter(

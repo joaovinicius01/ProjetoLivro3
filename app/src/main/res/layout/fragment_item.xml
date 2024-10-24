@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Nome_livro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Mogli" />
+        tools:srcCompat="@drawable/mogli" />
 
     <TextView
         android:id="@+id/Nome_livro"

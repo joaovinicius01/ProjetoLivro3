@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Mogli" />
+        tools:srcCompat="@drawable/mogli" />
 
     <TextView
         android:id="@+id/Nome_livro1"
@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/msg1"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@drawable/LivrodeEli" />
+        tools:srcCompat="@drawable/livrodeeli" />
 
     <TextView
         android:id="@+id/Nome_livro2"
@@ -93,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/msg2"
         app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@drawable/AmericanPie" />
+        tools:srcCompat="@drawable/americanpie" />
 
     <TextView
         android:id="@+id/Nome_livro3"
